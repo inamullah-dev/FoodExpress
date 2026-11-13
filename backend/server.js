@@ -18,6 +18,9 @@ const adminRoutes = require("./routes/adminRoutes");
 
 // Initialize Express
 const app = express();
+
+app.set("trust proxy", 1);
+
 const server = http.createServer(app);
 
 // Security middleware
